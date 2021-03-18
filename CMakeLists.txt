@@ -2,6 +2,8 @@ project(LeetCode)
 
 cmake_minimum_required(VERSION 3.19.6)
 
+include_directories(include)
+
 add_subdirectory(src)
 add_subdirectory(test)
 
@@ -23,6 +25,7 @@ endif()
 # Prevent overriding the parent project's compiler/linker
 # settings on Windows
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
 
 # Add googletest directly to our build. This defines
 # the gtest and gtest_main targets.
